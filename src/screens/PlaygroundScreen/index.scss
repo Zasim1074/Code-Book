@@ -1,0 +1,118 @@
+.playground-container {
+  grid-template-rows: auto 9fr;
+  background-color: black;
+  height: 100vh;
+  overflow-x: auto;
+  border-radius: 2px;
+
+  .code-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(-4.5rem + 100vh);
+    height: 100%;
+    border: none;
+
+    .input-output-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      border-radius: 10px;
+      border-left: 1.5px solid black;
+
+      .input-container,
+      .output-container {
+        .boxs {
+          border: none;
+          background: white;
+          height: 4rem;
+          padding: 0px 0.5rem;
+          z-index: 2;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+
+          p {
+            font-size: 1.25rem;
+            font-weight: 700;
+          }
+
+          .file-functions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #efefef;
+            border-radius: 2px;
+          }
+
+          button {
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .material-symbols-outlined {
+            cursor: pointer;
+            border: none;
+          }
+          #imp-int {
+            cursor: pointer;
+          }
+        }
+      }
+      .input-container,
+      .output-container {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+          border: none;
+          background-color: lightgrey;
+          color: white;
+          padding: 10px;
+          color: black;
+          flex-grow: 1;
+          outline: none;
+          resize: none;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .full-loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader {
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      border: 5px solid white;
+      border-left-color: tomato;
+      animation: 0.8s loader infinite linear;
+      border-radius: 20px;
+    }
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

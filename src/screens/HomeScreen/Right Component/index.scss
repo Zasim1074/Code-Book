@@ -1,0 +1,124 @@
+.right-container {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1.5px solid black;
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      span {
+        font-weight: 300;
+      }
+    }
+
+    .create-folder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      border-radius: 10px;
+      border: none;
+      background-color: white;
+    }
+    .create-folder:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 1px grey;
+    }
+  }
+
+  .folder-container {
+    padding: 5px 0px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid black;
+
+      .title {
+        font-size: 24px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+
+        button {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px;
+          border: none;
+          border-radius: 7px;
+          background-color: white;
+        }
+        button:hover {
+          box-shadow: 1px 1px 1px grey;
+        }
+      }
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .card {
+        width: 48.5%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+        gap: 12px;
+        border-radius: 12px;
+        transition-duration: 0.5s;
+        box-shadow: 1px 1px 1px grey;
+
+        img {
+          width: 90px;
+          border-radius: 11px;
+          cursor: pointer;
+        }
+        .card-items {
+          width: 100%;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          button {
+            border: none;
+            border-radius: 2px;
+            background-color: white;
+          }
+          button:hover {
+            box-shadow: 1px 1px 1px grey;
+            cursor: pointer;
+          }
+        }
+      }
+      .card:hover {
+        width: 48.8%;
+        box-shadow: 1px 1px 3px grey;
+        outline: 1px solid white;
+        border: none;
+      }
+    }
+  }
+}

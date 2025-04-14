@@ -1,0 +1,57 @@
+.edit-File-Modal-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153,153,153, 0.3);
+
+    .edit-File-Modal-body{
+        width: 20vw;
+        height: auto;
+        border: none;
+        border-radius: 12px;
+        background-color: white;
+        padding: 25px;
+        padding-top: 25px;
+        box-shadow: 4px 4px 10px grey;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .items{
+            display: flex;
+            justify-content: space-between; 
+
+            input{
+                padding: 4.5px;
+            }
+
+            button{
+                padding: 9.5px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(36,31,33);
+                color: white;                
+            }
+            button:hover{
+                box-shadow: 1px, 1px, 3px grey;
+                cursor: pointer;
+            }
+        }
+
+        .material-symbols-outlined{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+    .modal-body:hover{
+        box-shadow: 5px 5px 11px grey;
+    }
+}

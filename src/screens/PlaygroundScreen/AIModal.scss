@@ -1,0 +1,106 @@
+.ai-modal {
+  height: auto;
+  width: auto;
+  background-color: aquamarine;
+  background: white;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+    width: 100%;
+    border: none;
+    height: 4rem;
+    padding: 0px 0.5rem;
+    z-index: 2;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.4rem 0.4rem;
+      font-size: 14px;
+      width: auto;
+      background: lightgrey;
+      border: none;
+      border-radius: 32px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  .chat-box {
+    height: 30vmin;
+    width: 100%;
+    border: none;
+    background-color: #d3d3d3;
+    padding: 0;
+
+    textarea,
+    p {
+      color: black;
+      height: 28.75vmin;
+      width: 31vw;
+      background-color: #d3d3d3;
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+      word-wrap: break-word;
+      outline: none;
+      resize: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .footer {
+    height: 7.1vmin;
+    display: flex;
+    align-items: normal;
+    width: 100%;
+    background-color: white;
+
+    #give-input {
+      width: 100%;
+      background-color: white;
+      padding: 8px;
+      outline: none;
+      font-size: 14px;
+      border: 1px solid gray;
+      border-left: none;
+      resize: none;
+      border-radius: 4px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.4rem 0.4rem;
+      margin: 4px;
+      font-size: 14px;
+      width: 70px;
+      background: #f27e59;
+      border: none;
+      border-radius: 35px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover {
+      outline: 1px solid white;
+    }
+  }
+}
