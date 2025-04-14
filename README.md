@@ -28,29 +28,4 @@ This document outlines the development of an Online Code Editor web application 
 13. **Two Different Screens**: 1)HomePage:- ![alt text](image.png) 2)Editor page:- ![alt text](image-1.png)
 14. **AI chatbot**: Integrated Google AI(Gemini) as a chatbot inside the project so the user can get help and can code seamlessly and fully engaged
 
-## Implementation Strategy
-The application follows a component-based architecture with:
-- Editor Component: Integrating Monaco Editor with custom configurations
-- Output Component: Displaying execution results and errors
-- Collaboration Service: Managing Judge0 server connections for real-time updates and compilation
-- Storage Service: Handling and storing your data in your local storage 
-- Import and Export: Work with code, input, and output
-- AI ChatBot: AI tool that will help you like your personal Chatbot(as you use ChatGpt and other openAI platfroms) and can make this platfrom engaging
-
-## User Experience Considerations
-- Minimalist interface with focus on the code editor
-- Customizable themes (light/dark modes)
-- Keyboard shortcuts for common operations
-- Split-screen views for code and output
-- Session persistence to prevent work loss
-- AI Chatbot to enhance the user experince and keep this site in as engaging as possible. In Addition, you can also chat about fun, movies, news, history, and also other subjects concepts for students.
-
-## Deployment Strategy
-The application will be deployed using:
-- CDN for static assets to improve loading performance
-- Scalable frontend services to handle varying user loads
-
-## Problems faced while building 
-- Limited Judge0 API access cause I am using a free plan with 50 code compilation limits daily
-
-## Live Project Link:- https://project-judge1.vercel.app/
+## Live Project Link:- 
