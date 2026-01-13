@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_KEY = "AIzaSyAcaxmmGgah7-5hySlhyjocbeN14xvs6tU";
+const API_KEY = "hidden";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent?key=${API_KEY}`
 
 const useGemini = () => {
