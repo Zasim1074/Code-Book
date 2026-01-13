@@ -1,8 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_KEY = "AIzaSyDSo0TjnpghSLPbR_LJYgsiqbwwbbIKElo";
-const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`
+const API_KEY = "AIzaSyAcaxmmGgah7-5hySlhyjocbeN14xvs6tU";
+const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent?key=${API_KEY}`
 
 const useGemini = () => {
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,7 @@ const useGemini = () => {
       );
       setResponse(res.data.candidates[0]?.content?.parts[0]?.text || "No response.");
     } catch (err) {
-      setError("Failed to fetch response.");
+      setError("Gemini Data .");
     }
     setLoading(false);
   };
